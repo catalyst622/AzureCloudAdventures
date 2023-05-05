@@ -1,0 +1,10 @@
+module.exports = async function (context, req) {
+    context.log('Fetching adventure options...');
+
+    const options = context.bindings.adventureOptions;
+
+    context.res = {
+        status: 200,
+        body: options
+    };
+};
